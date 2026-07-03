@@ -15,7 +15,14 @@
     "format": "oxfmt src/"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "admin-lte": "^3.2.0",
+    "axios": "^1.18.1",
+    "bootstrap": "^4.6.2",
+    "icheck-bootstrap": "^3.0.1",
     "pinia": "^3.0.4",
+    "pinia-plugin-persistedstate": "^4.7.1",
+    "sweetalert2": "^11.26.25",
     "vue": "beta",
     "vue-router": "^5.1.0"
   },
@@ -32,6 +39,7 @@
     "eslint-plugin-playwright": "^2.10.4",
     "eslint-plugin-vue": "~10.9.2",
     "globals": "^17.6.0",
+    "husky": "^9.1.7",
     "jsdom": "^29.1.1",
     "npm-run-all2": "^9.0.2",
     "oxfmt": "^0.54.0",
