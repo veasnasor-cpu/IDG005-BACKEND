@@ -28,9 +28,11 @@ router.beforeEach(async (to, from) => {
 
   try {
     const token = userStore.getSanctumToken();
-    const response = await apiVerify(token);
-    const { data } = response;
-    userStore.setState(data.user);
+    if (token) {
+      const response = await apiVerify(token);
+      const { data } = response;
+      userStore.setState(data.user);
+    }
   } catch (error) {
     if (error.response && error.response.status === 401) {
       userStore.reset();
